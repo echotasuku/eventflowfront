@@ -1,0 +1,22 @@
+/* Estilos para o footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #0e0d0d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.c-item{
+
+    height: 480px;
+}
+
+.c-image{
+
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+}

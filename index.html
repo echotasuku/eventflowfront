@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventflow</title>
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css1/style.css">
+    <link rel="stylesheet" href="./css1/gouath.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Eventflow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Crie seu evento/CriarEvento.html">Criar Evento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <!-- Configurações do Google -->
+            <div id="g_id_onload"
+                data-client_id="890074811594-mjem3gdbhufcj86794gtq9aru1e2e221.apps.googleusercontent.com"
+                data-context="signin" data-ux_mode="popup" data-callback="loginCallback" data-auto_prompt="false">
+            </div>
+
+            <!-- Botão de login -->
+            <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline"
+                data-text="signin_with" data-size="large" data-logo_alignment="left">
+            </div>
+            <!-- Local onde irá aparecer as informações do usuário -->
+            <div class="g_id_logado"></div>
+        </div>
+    </nav>
+
+    <div id="carouselEvent" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselEvent" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselEvent" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselEvent" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active  c-item">
+                <img src="./assets/79-imagens-de-destaque_ativacao-de-marcas-em-eventos-3840x2560.png"
+                    class="d-block w-100 c-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item   c-item">
+                <img src="./assets/medium-shot-smiley-people-dancing-outdoors.jpg" class="d-block w-100 c-image"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item   c-item">
+                <img src="./assets/pic2.jpg" class="d-block w-100 c-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvent" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvent" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br />
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/image1.jpg" class="card-img-top" alt="Imagem do Evento 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 1</h5>
+                        <p class="card-text">Descrição do evento 1.</p>
+                        <a href="./EventsPage/event1.html" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/imagee2.jpg" class="card-img-top" alt="Imagem do Evento 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 2</h5>
+                        <p class="card-text">Descrição do evento 2.</p>
+                        <a href="./EventsPage/event2.html" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/image4.jpg" class="card-img-top" alt="Imagem do Evento 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 3</h5>
+                        <p class="card-text">Descrição do evento 3.</p>
+                        <a href="./EventsPage/event3.html" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </br>
+
+    <div class="container" id="sobre">
+        <section>
+            <h2>Sobre:</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec aliquam nibh. Integer euismod, mauris
+                et
+                ultrices consequat, turpis augue convallis urna, sed sagittis justo eros in nunc. Sed tincidunt, tellus
+                eget
+                consequat fringilla, nisl erat finibus lorem, ac bibendum metus nunc id nibh. Nulla facilisi. Etiam sed
+                ultricies erat. Curabitur euismod, leo sed tincidunt fringilla, massa risus consequat dui, a aliquam
+                risus
+                purus ut sem. Aenean ut justo id sapien egestas auctor. Aliquam erat volutpat. Curabitur id enim auctor,
+                fermentum felis ac, placerat orci. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus
+                et
+                ultrices posuere cubilia curae; Vestibulum sed lacinia turpis. Fusce auctor justo vel mi facilisis, et
+                tincidunt risus tempus. Nam nec fermentum turpis.
+            </p>
+        </section>
+    </div>
+
+    <br />
+    <br />
+
+    <hr />
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Entre em contato</h3>
+                        <hr class="my-4">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem:</label>
+                                <textarea class="form-control" id="message" rows="3"
+                                    placeholder="Digite sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>Todos os direitos reservados &copy; 2022</p>
+        <div class="col-md-4">
+            <h6>Informações de Contato</h6>
+            <hr />
+            <div class="text-white-mb-1">#43, Rua Alguma coisa</div>
+            <div class="text-white-mb-1">+84 9222222</div>
+            <div class="text-white-mb-1">example@example.com</div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Seus outros scripts -->
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="./js/goauth.js"></script>
+</body>
+
+</html>
