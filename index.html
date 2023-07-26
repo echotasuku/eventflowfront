@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./css1/gouath.css">
 </head>
 
+
+
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Eventflow</a>
@@ -24,7 +27,7 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Crie seu evento/CriarEvento.html">Criar Evento</a>
+                    <a class="nav-link" href="./CriarEvento/CriarEvento.html">Criar Evento</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#sobre">Sobre</a>
@@ -62,26 +65,23 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active  c-item">
-                <img src="./assets/79-imagens-de-destaque_ativacao-de-marcas-em-eventos-3840x2560.png"
+                <img src="./assets/gallery4.jpg"
                     class="d-block w-100 c-image" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                  
                 </div>
             </div>
             <div class="carousel-item   c-item">
-                <img src="./assets/medium-shot-smiley-people-dancing-outdoors.jpg" class="d-block w-100 c-image"
+                <img src="./assets/gallery2.jpg" class="d-block w-100 c-image"
                     alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    
                 </div>
             </div>
             <div class="carousel-item   c-item">
-                <img src="./assets/pic2.jpg" class="d-block w-100 c-image" alt="...">
+                <img src="./assets/gallery7.jpg" class="d-block w-100 c-image" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Evento 1</h5>
                         <p class="card-text">Descrição do evento 1.</p>
-                        <a href="./EventsPage/event1.html" class="btn btn-primary">Saiba Mais</a>
+                
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Evento 2</h5>
                         <p class="card-text">Descrição do evento 2.</p>
-                        <a href="./EventsPage/event2.html" class="btn btn-primary">Saiba Mais</a>
+                    
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Evento 3</h5>
                         <p class="card-text">Descrição do evento 3.</p>
-                        <a href="./EventsPage/event3.html" class="btn btn-primary">Saiba Mais</a>
+                    
                     </div>
                 </div>
             </div>
@@ -134,22 +134,13 @@
 
     </br>
 
-    <div class="container" id="sobre">
+    <div class="container" id="sobre" >
         <section>
             <h2>Sobre:</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec aliquam nibh. Integer euismod, mauris
-                et
-                ultrices consequat, turpis augue convallis urna, sed sagittis justo eros in nunc. Sed tincidunt, tellus
-                eget
-                consequat fringilla, nisl erat finibus lorem, ac bibendum metus nunc id nibh. Nulla facilisi. Etiam sed
-                ultricies erat. Curabitur euismod, leo sed tincidunt fringilla, massa risus consequat dui, a aliquam
-                risus
-                purus ut sem. Aenean ut justo id sapien egestas auctor. Aliquam erat volutpat. Curabitur id enim auctor,
-                fermentum felis ac, placerat orci. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus
-                et
-                ultrices posuere cubilia curae; Vestibulum sed lacinia turpis. Fusce auctor justo vel mi facilisis, et
-                tincidunt risus tempus. Nam nec fermentum turpis.
+        Nosso sistema foi desenvolvido para facilitar a criação, organização e participação em eventos de forma simples e
+        eficiente.Proporcionamos uma experiência agradável tanto para os
+        organizadores quanto para os participantes.
             </p>
         </section>
     </div>
@@ -157,9 +148,10 @@
     <br />
     <br />
 
+
     <hr />
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="contact-container">
+        
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
@@ -168,45 +160,58 @@
                         <form>
                             <div class="form-group">
                                 <label for="name">Nome:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                                <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Mensagem:</label>
                                 <textarea class="form-control" id="message" rows="3"
-                                    placeholder="Digite sua mensagem"></textarea>
+                                    placeholder="Digite sua mensagem" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+        
     </div>
 
-    <footer class="bg-dark text-white text-center p-3 mt-5">
-        <p>Todos os direitos reservados &copy; 2022</p>
-        <div class="col-md-4">
-            <h6>Informações de Contato</h6>
-            <hr />
-            <div class="text-white-mb-1">#43, Rua Alguma coisa</div>
-            <div class="text-white-mb-1">+84 9222222</div>
-            <div class="text-white-mb-1">example@example.com</div>
+<footer class="bg-dark text-white p-3 mt-2">
+   
+        <div class="row">
+            <div class="col-md-2">
+                <h6>Informações de Contato</h6>
+                <hr />
+                <div class="text-white mb-1">#43, Rua Alguma coisa</div>
+                <div class="text-white mb-1">+84 9222222</div>
+                <div class="text-white mb-1">example@example.com</div>
+           
         </div>
-    </footer>
+    </div>
+    <p class="mt-6">Todos os direitos reservados &copy; 2022</p>
+</footer>
+
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    
     <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
-
+    
+    <script src="./js/event.js"></script>
     <!-- Seus outros scripts -->
     <script src="https://accounts.google.com/gsi/client" async></script>
+    
     <script src="./js/goauth.js"></script>
+
+
+
+
+
+
 </body>
 
 </html>

@@ -3,10 +3,32 @@ var URL_EDIT = null;
 
 
 $(function(){
+     //verificarAutenticacao();
+     
     $('#submit').click(save);
       updateList();
      
 });
+
+// Função para verificar a autenticação
+//function verificarAutenticacao() {
+    //$.ajax(URL_BASE + "verificar-autenticacao", {
+        //method: 'get',
+    //}).done(function(res) {
+        // O usuário está autenticado, habilitar o botão de cadastro ou exibir o conteúdo relacionado ao cadastro
+       // $('#submit').prop('disabled', false);
+        // ...
+        // Chamar a função para listar os eventos após verificar a autenticação
+       // updateList();
+    //}).fail(function(res) {
+        // O usuário não está autenticado, desabilitar o botão de cadastro ou ocultar o conteúdo relacionado ao cadastro
+      //  $('#submit').prop('disabled', true);
+        // ...
+    //});
+//}
+
+
+
 
 
 //deletar
@@ -29,11 +51,17 @@ function del(url){
 
 //salvar
 function save(){
+    if (!localStorage.getItem("gauth-token")) {
+        // Exibir o modal de aviso
+        $('#loginModal').modal('show');
+        return;
+    }
+
     
     dados = $('#title,#date_event,#time_event,#location,#description').serializeJSON();
     //dados["usuario"] = $('#name,#email').serializeJSON();
 
-    console.log("oi");
+    // console.log(d);
     console.log(dados);
 
 
@@ -50,24 +78,24 @@ function save(){
 
     console.log(url)
 
-//mudar o id_google pra usuario_id depois de fazer o ajax
-   dados['usuario'] = getGoogleid(); 
-  
-    $.ajax(url,{
-        data:JSON.stringify(dados),
-        method:method,
-        contentType: "application/json",
-    }).done(function(res) {
-        console.log(res);
+   dados['usuario'] = URL_BASE + "usuarios/" + getGoogleId(); 
+    if(dados['title']!=='' && dados['location']!==''){
+        $.ajax(url,{
+            data:JSON.stringify(dados),
+            method:method,
+            contentType: "application/json",
+        }).done(function(res) {
+            console.log(res);
 
-         URL_EDIT = URL_BASE + "events" + res.id;
+            URL_EDIT = URL_BASE + "events" + res.id;
 
 
-         updateList();
-    })
-    .fail(function(res) {
-        console.log(res);
-    });  
+            updateList();
+        })
+        .fail(function(res) {
+            console.log(res);
+        });  
+    }
     
 }
 

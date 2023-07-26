@@ -1,22 +1,51 @@
 /* Estilos para o footer */
-footer {
-    bottom: 0;
-    width: 100%;
-    background-color: #0e0d0d;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+
+
+body {
+    background-color: rgb(255, 255, 255);
 }
 
 
-.c-item{
 
-    height: 480px;
-}
+
 
 .c-image{
 
     height: 100%;
     object-fit: cover;
     filter: brightness(1);
+}
+
+/* Estilo para o botão no carrossel */
+.c-item {
+    position: relative;
+}
+
+.c-image {
+    height: 480px;
+    /* Altura da imagem do botão */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    /* Cor de fundo semi-transparente para o texto do botão */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    color: rgb(75, 70, 70);
+}
+
+   .carousel {
+            height: 100vh; /* O carousel ocupará 100% da altura da janela */
+        }
+
+        .carousel-inner {
+            height: 100%; /* O conteúdo do carousel ocupará 100% da altura do próprio carousel */
+        }
+sobre{
+
+    color: white;
+
 }

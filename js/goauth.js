@@ -1,4 +1,3 @@
-
 function jwtDecode (token) {
     var base64Url = token.split('.')[1];
     var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -15,7 +14,7 @@ function loginCallback(resp){
 
     console.log(cred);
     var userData = {
-    id: cred.exp,
+    id: cred.sub,
     name: cred.name,
     email: cred.email
   };
@@ -56,8 +55,8 @@ function setLoginStatus(cred){
 
 function getGoogleId(){
     if (localStorage.getItem("gauth-token") != undefined){
-        cred = jwtDecode(localStorage.getItem("gauth-token"));
-        return cred.exp;
+        let cred = jwtDecode(localStorage.getItem("gauth-token"));
+        return cred.sub;
     } else {
         return null;
     }

@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <h1>Oi</h1>
+    <title>Adicionar Evento</title>
 </head>
+
 <body>
-    
+    <h1>Adicionar Evento</h1>
+    <form id="eventoForm">
+        <label for="title">Título:</label>
+        <input type="text" id="title" required>
+        <br>
+        <label for="date_event">Data do Evento:</label>
+        <input type="date" id="date_event" required>
+        <br>
+        <label for="time_event">Horário do Evento:</label>
+        <input type="time" id="time_event" required>
+        <br>
+        <label for="location">Local:</label>
+        <input type="text" id="location" required>
+        <br>
+        <label for="description">Descrição:</label>
+        <textarea id="description" required></textarea>
+        <br>
+        <button type="button" onclick="adicionarEvento()">Adicionar Evento</button>
+    </form>
+
+    <script>
+        function adicionarEvento() {
+            const title = document.getElementById('title').value;
+            const date_event = document.getElementById('date_event').value;
+            const time_event = document.getElementById('time_event').value;
+            const location = document.getElementById('location').value;
+            const description = document.getElementById('description').value;
+
+            const evento = {
+                title: title,
+                date_event: date_event,
+                time_event: time_event,
+                location: location,
+                description: description
+            };
+
+            // Faça uma requisição AJAX para adicionar o evento no servidor
+            // Exemplo: $.ajax(...);
+
+            // Após adicionar o evento com sucesso, redirecione o usuário para a página de eventos ou exiba uma mensagem de sucesso
+            alert('Evento adicionado com sucesso!');
+            window.location.href = 'pagina-de-eventos.html';
+        }
+    </script>
 </body>
+
 </html>
